@@ -1,0 +1,5 @@
+<div ng-controller="todoAppCtrl">
+	<div ng-repeat="todo in todos" ng-class-odd="'odd'" ng-class-even="'even'">
+		{{todo.list}} - {{todo.todo}} <div class="pull-right">{{todo.created_at | date:'MM/dd/yyyy @ h:mma'}}</div>
+	</div>
+</div>

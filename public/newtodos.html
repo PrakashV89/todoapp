@@ -1,0 +1,16 @@
+<form ng-Submit="pushTaskToDb();">
+	{{errMsg}}
+	<input required ng-model="todoTasks.list" placeholder="To Do List Name" />
+	<input class="btn submit-btn" type="submit" value="Done" />
+	<br/>
+	<br/>
+	<input ng-model="todoTask" placeholder="To Do Task Name" />
+	<input class="btn submit-btn" value="Add Task" ng-click="post();"/>
+	<div align="bottom">
+	<div ng-repeat="todoTask in todoTasks.todotasks" ng-class-odd="'odd'" ng-class-even="'even'">
+	{{todoTask.todo}}
+	</div>
+<br/>
+<br/>
+	</div>
+	</form>
