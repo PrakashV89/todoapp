@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://2chat@admin:pwd2chat@ds023495.mlab.com:23495/2chat');
+mongoose.connect('mongodb://2chatadmin:pwd2chat@ds023495.mlab.com:23495/2chat');
 
 require('./models/model')
 
