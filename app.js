@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://2chatadmin:pwd2chat@ds023495.mlab.com:23495/2chat');
+//mongoose.connect("mongodb://localhost:27017/todo");
 
 require('./models/model')
 

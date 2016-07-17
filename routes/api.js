@@ -19,7 +19,7 @@ router.route('/')
 	.post(function(req,res){
 		var todosall = req.body;
 		var todolist = todosall.list;
-		var todos = todosall.todo;
+		var todos = todosall.todotasks;
 
 		console.log(todosall);
  	console.log("data : " + todos);
